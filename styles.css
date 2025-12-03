@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", serif;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  padding: 40px 60px;
+}
+
+.site-title {
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-title h1 {
+  font-size: 32px;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+
+.nav-inline a,
+.nav-inline span {
+  margin: 0 20px;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-inline a:hover {
+  text-decoration: underline;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.gallery-grid {
+  max-width: 1100px;
+}
+
+.gallery-img {
+  display: block;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.details {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.hero-arrow {
+  font-size: 32px;
+}
+
+.about-photo {
+  border: 3px solid #000000;
+}
+
+.about-row {
+  margin-top: 40px;
+}
+
+.contact-row {
+  margin-top: 60px;
+}
+
+.contact-left p {
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.contact-right p {
+  margin: 4px 0;
+}
+
+.contact-right a {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.12em;
+}
+
+.contact-right a:hover {
+  text-decoration: underline;
+}
