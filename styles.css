@@ -1,3 +1,4 @@
+/* Base page styling */
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   padding: 40px 60px;
 }
 
+/* Header title */
 .site-title {
   text-decoration: none;
   color: #000000;
@@ -20,6 +22,7 @@ body {
   margin-bottom: 24px;
 }
 
+/* Navigation */
 .nav-inline a,
 .nav-inline span {
   margin: 0 20px;
@@ -37,13 +40,134 @@ body {
   font-weight: bold;
 }
 
-.gallery-grid {
-  max-width: 1100px;
+/* ---------- HERO (Home page carousel) ---------- */
+
+.hero-frame {
+  border: 3px solid #000000;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.gallery-img {
-  display: block;
+.hero-image {
+  height: 360px;
+  object-fit: cover;
 }
+
+/* ---------- GALLERY MASONRY ---------- */
+
+.gallery-grid {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.gallery-col {
+  padding: 0;
+}
+
+.gallery-frame {
+  border: 2px solid #000000;
+  overflow: hidden;
+}
+
+.gallery-frame-small {
+  height: 120px;
+}
+
+.gallery-frame-medium {
+  height: 170px;
+}
+
+.gallery-frame-large {
+  height: 210px;
+}
+
+.gallery-frame-xsmall {
+  height: 90px;
+}
+
+.gallery-grid .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(40%);
+  opacity: 0.8;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-grid .gallery-img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-photo {
+  border: 3px solid #000000;
+}
+
+.about-row {
+  margin-top: 40px;
+}
+
+.details {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ---------- CONTACT PAGE (Figma exact alignment) ---------- */
+
+.contact-row {
+  margin-top: 60px;
+}
+
+/* Centers the pair of columns as one block */
+.contact-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;   /* width of the entire block */
+  margin: 0 auto;     /* centers the block */
+}
+
+/* Left column text */
+.contact-left p {
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-align: left;
+  margin: 0;
+}
+
+/* Right column text */
+.contact-right p {
+  margin: 4px 0;
+  text-align: left;
+}
+
+.contact-right a {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.12em;
+}
+
+.contact-right a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .contact-left p,
+  .contact-right p {
+    text-align: center;
+  }
+}
+
+/* ---------- FOOTER ---------- */
 
 .footer-links a {
   margin: 0 10px;
@@ -54,45 +178,5 @@ body {
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
-}
-
-.details {
-  line-height: 1.8;
-  font-size: 14px;
-}
-
-.hero-arrow {
-  font-size: 32px;
-}
-
-.about-photo {
-  border: 3px solid #000000;
-}
-
-.about-row {
-  margin-top: 40px;
-}
-
-.contact-row {
-  margin-top: 60px;
-}
-
-.contact-left p {
-  font-weight: bold;
-  letter-spacing: 0.08em;
-}
-
-.contact-right p {
-  margin: 4px 0;
-}
-
-.contact-right a {
-  text-decoration: none;
-  color: #000000;
-  letter-spacing: 0.12em;
-}
-
-.contact-right a:hover {
   text-decoration: underline;
 }
